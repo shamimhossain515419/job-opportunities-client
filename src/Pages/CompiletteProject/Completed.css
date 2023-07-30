@@ -1,0 +1,12 @@
+.Completed {
+     width: 100%;
+     background-image:
+     linear-gradient(to bottom, rgba(0, 0, 0, 0.325), rgba(0, 0, 0, 0.244)),
+     url('https://jobify-demos.astoundify.com/extended/wp-content/uploads/sites/3/2022/01/widget-home-feature-callout-5-1-scaled.jpg');
+   
+     background-repeat: no-repeat;
+   background-size: calc(1);
+   background-attachment: fixed;
+   background-position: center;
+
+}

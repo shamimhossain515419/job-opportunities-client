@@ -1,0 +1,50 @@
+[
+     {
+          "Title": "Tech Giant Expands, Creating 1,000 New IT Jobs",
+          "Date": "2023-07-28",
+          "Description": "In a significant move, the tech giant 'InnoTech' announced its plans to expand its operations, leading to the creation of 1,000 new IT jobs. The company will be hiring software engineers, data scientists, and cybersecurity experts to fuel its growth in emerging technologies.",
+          "Source": "TechNews Today",
+          "comment": 45,
+          "Image": "https://img.freepik.com/free-photo/business-people-working-together_155003-5318.jpg?w=1380&t=st=1690697610~exp=1690698210~hmac=cc20806417028177a3efbcaa8dd0b41cb0cb4a6811fb72c6ff29b3e464547c2f"
+     },
+     {
+          "Title": "Remote Work Trends Transform Job Market",
+          "Date": "2023-07-27",
+          "Description": "The rise of remote work continues to transform the job market. Companies across various industries are adopting hybrid work models, allowing employees to work from home part-time. As a result, job seekers are prioritizing remote work opportunities in their search for better work-life balance and increased flexibility.",
+          "comment": 50,
+          "Source": "Business Daily",
+          "Image": "https://img.freepik.com/premium-photo/panel-corporate-personnel-officers-office_13339-70428.jpg?w=1380"
+     },
+     {
+          "Title": "Demand for Green Energy Jobs Soars",
+          "comment": 15,
+          "Date": "2023-07-26",
+          "Description": "With the growing emphasis on sustainability, the demand for green energy jobs is soaring. Renewable energy companies are seeking professionals skilled in solar and wind energy, as well as environmental engineers and sustainable project managers to drive the shift towards cleaner energy solutions.",
+          "Source": "GreenTech Magazine",
+          "Image": "https://img.freepik.com/premium-photo/young-business-people-conference-office_85574-11127.jpg?w=1380"
+     },
+     {
+          "Title": "Blockchain Technology Creates New Job Roles",
+          "comment": 20,
+          "Date": "2023-07-25",
+          "Description": "The widespread adoption of blockchain technology is creating new job roles in the fintech sector. Blockchain developers, smart contract engineers, and blockchain consultants are in high demand as businesses explore the potential of decentralized systems for secure and transparent transactions.",
+          "Source": "FinTech Insights",
+          "Image": "https://img.freepik.com/free-photo/window-pensive-handyman-smartphone-woman_1134-1217.jpg?w=1480&t=st=1690697630~exp=1690698230~hmac=8571cd403d193bf907f99fbe7f8a217abd8fe6ec6782a9b4af1e3a7d607759d2"
+     },
+     {
+          "Title": "Diversity and Inclusion Initiatives Boost Workplace Productivity",
+          "Date": "2023-07-24",
+          "Description": "Companies investing in diversity and inclusion initiatives are experiencing a boost in workplace productivity. By fostering an inclusive work environment, businesses are attracting a diverse talent pool and benefitting from a wider range of perspectives, which leads to enhanced innovation and overall success.",
+          "Source": "HR Today",
+          "comment": 19,
+          "Image": "https://img.freepik.com/free-photo/top-view-young-female-sitting-table-feeling-curious-about-something-office_140725-106133.jpg?w=1380&t=st=1690697644~exp=1690698244~hmac=1edde5125608be18d2cd2f76894ae901b4a2815cc757a5c6687928fb778cdeb9"
+     },
+     {
+          "Title": "New Tech Startup Offers Remote Work Opportunities",
+          "Date": "2023-07-23",
+          "Description": "A newly launched tech startup, 'TechNex', is making waves by offering 100% remote work opportunities. The company's innovative approach to work is attracting top talent from around the globe. 'TechNex' aims to revolutionize how teams collaborate and deliver cutting-edge solutions for its clients.",
+          "comment": 80,
+          "Source": "TechCrunch",
+          "Image": "https://img.freepik.com/free-photo/senior-business-man-smiling-while-shaking-hands-with-woman_1262-751.jpg?w=1380&t=st=1690698903~exp=1690699503~hmac=10fecc6b24fdde0a029802572c84cc4427f4ced1cb6598f8a549071c04a41a57"
+     }
+]
