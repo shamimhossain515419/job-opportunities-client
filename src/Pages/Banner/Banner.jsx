@@ -2,6 +2,7 @@ import Container from "../../Component/Container";
 import { MdOutlineWork } from 'react-icons/md'
 import { FiSearch } from 'react-icons/fi'
 import { SiGooglemaps } from 'react-icons/si'
+import { Link } from "react-router-dom";
 const Banner = () => {
      return (
           <div className="BgBanner py-5">
@@ -24,9 +25,9 @@ const Banner = () => {
                                         <input className=" placeholder:text-black  w-full bg-transparent outline-none   border-none" type="text" name="" placeholder="Job title | tag | company name" id="" />
                                    </div>
                                    <div className=" w-full my-2  md:bg-transparent  shadow-lg md:shadow-none  bg-white  flex justify-start items-center gap-2 px-3 py-4 rounded-xl">
-                                        <div className=' bg-[#0058f0] w-full text-center    text-2lx font-medium text-white px-6F py-4 rounded-md mx-2'>
+                                        <Link to={'/job'} className=' bg-[#0058f0] w-full text-center    text-2lx font-medium text-white px-6F py-4 rounded-md mx-2'>
                                              Find Job
-                                        </div>
+                                        </Link>
                                    </div>
                               </div>
 

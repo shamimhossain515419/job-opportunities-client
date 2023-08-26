@@ -24,7 +24,7 @@ const PostJob = () => {
           data.date = new Date();
           const JobData = data;
           console.log(JobData);
-          axios.post('https://job-opportunities-server.vercel.app//job', JobData).then(result => {
+          axios.post('https://job-opportunities-server.vercel.app/job', JobData).then(result => {
                console.log(result);
                if (result) {
                     toast.success('Successfully Post Job!')

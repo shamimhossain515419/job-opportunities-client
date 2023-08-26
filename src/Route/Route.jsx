@@ -31,7 +31,7 @@ const Route = createBrowserRouter([
                {
                     path: '/job/:id',
                     element: <DetailsJob></DetailsJob>,
-                    loader:({params})=>fetch(`https://job-opportunities-server.vercel.app//job/${params.id}`)
+                    loader:({params})=>fetch(`https://job-opportunities-server.vercel.app/job/${params.id}`)
                }
           ]
      },

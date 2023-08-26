@@ -6,7 +6,7 @@ import { HiOutlinePhotograph } from 'react-icons/hi';
 import { FcGoogle } from 'react-icons/fc';
 import { Link, NavLink } from 'react-router-dom'
 
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import Manu from './Manu';
 import Container from '../../Component/Container';
 import Modal from './Modal.jsx/Modal';
@@ -19,13 +19,33 @@ const Navbar = () => {
      const [OpenModal, setOpenModal] = useState(false);
      const { user } = useContext(AuthContact);
      const [dropDown, setDeopWown] = useState(false)
+
+     const [show, setShow] = useState(false);
+
+     useEffect(() => {
+          const handleScroll = () => {
+               if (window.scrollY >= 200) {
+                    setShow(true);
+               } else {
+                    setShow(false);
+               }
+          };
+
+          window.addEventListener("scroll", handleScroll);
+
+          // Clean up the event listener when the component unmounts
+          return () => {
+               window.removeEventListener("scroll", handleScroll);
+          };
+     }, []); // Empty dependency array ensures the effect runs only once
+    
      return (
           <div>
-               <nav className='px-2 w-full bg-white  text-black  fixed       top-0  left-0 right-0 z-50   py-2 shadow-lg'>
+               <nav   className={`${show ?  "px-2 w-full bg-white  text-black  fixed       top-0  left-0 right-0 z-50   py-2 shadow-lg" :  'px-2 w-full bg-white  text-black         top-0  left-0 right-0 z-50   py-2'}`}>
                     <Container>
                          <div>
                               <div className=' flex justify-between items-center'>
-                                   <div className=' flex    justify-center items-center gap-4'>
+                                   <div className=' flex    justify-center items-center gap-5'>
                                         <Link to={'/'}> <h1 className=' LogoStyle font-semibold text-base md:text-3xl text-color    capitalize '> job opportunities </h1></Link>
 
                                         <div className=' hidden md:block  mt-1 space-x-5  ml-4 '>
@@ -42,9 +62,9 @@ const Navbar = () => {
                                    <div className=' hidden  md:flex justify-center items-center gap-4'>
 
                                         {
-                                             user ? <div onClick={()=>setDeopWown(!dropDown) } className='  cursor-pointer'>
+                                             user ? <div onClick={() => setDeopWown(!dropDown)} className='  cursor-pointer'>
                                                   <img className=' border-2 border-blue-500 h-14 w-14 rounded-full object-cover ' src={user?.photoURL} alt="" />
-                                                   </div> : <div onClick={() => setOpenModal(true)} className='  cursor-pointer bg-[#E2EAF8] textColor  text-lg font-medium text-white px-4 py-2 rounded-md mx-2'>
+                                             </div> : <div onClick={() => setOpenModal(true)} className='  cursor-pointer bg-[#E2EAF8] textColor  text-lg font-medium text-white px-4 py-2 rounded-md mx-2'>
                                                   Login/Sing
                                              </div>
                                         }
@@ -82,12 +102,12 @@ const Navbar = () => {
                </nav>
 
                <div>
-               {
-                     dropDown ? <div className=' hidden md:block  fixed right-1  top-20 z-50 bg-white p-4 rounded-lg min-w-[400px]'>
-                      
-                         <Drowpdown setDeopWown={setDeopWown}></Drowpdown>
-                      </div> :<></>
-               }
+                    {
+                         dropDown ? <div className=' hidden md:block  fixed right-1  top-20 z-50 bg-white p-4 rounded-lg min-w-[400px]'>
+
+                              <Drowpdown setDeopWown={setDeopWown}></Drowpdown>
+                         </div> : <></>
+                    }
                </div>
 
                <Modal OpenModal={OpenModal} setOpenModal={setOpenModal}></Modal>

@@ -9,7 +9,7 @@ import Heading from '../../CompiletteProject/Headnling/Handling';
 const Job = ({ open }) => {
      const [jonData, setJobData] = useState();
      useEffect(() => {
-          fetch('https://job-opportunities-server.vercel.app//job').then(res => res.json()).then(data => setJobData(data))
+          fetch('https://job-opportunities-server.vercel.app/job').then(res => res.json()).then(data => setJobData(data))
 
 
      }, [])
