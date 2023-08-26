@@ -16,7 +16,6 @@ import Drowpdown from './Drowpdown';
 
 const Navbar = () => {
      const [Open, setOpen] = useState(true);
-
      const [OpenModal, setOpenModal] = useState(false);
      const { user } = useContext(AuthContact);
      const [dropDown, setDeopWown] = useState(false)
@@ -27,11 +26,11 @@ const Navbar = () => {
                          <div>
                               <div className=' flex justify-between items-center'>
                                    <div className=' flex    justify-center items-center gap-4'>
-                                        <Link to={'/'}> <h1 className=' LogoStyle font-semibold  text-4xl text-color '> job opportunities </h1></Link>
+                                        <Link to={'/'}> <h1 className=' LogoStyle font-semibold text-base md:text-3xl text-color    capitalize '> job opportunities </h1></Link>
 
                                         <div className=' hidden md:block  mt-1 space-x-5  ml-4 '>
                                              <NavLink className={({ isActive }) => isActive ? ` textColor  font-semibold   ` : `font-semibold`} to={'/'}> Home</NavLink>
-                                             <NavLink className={({ isActive }) => isActive ? ` textColor  font-semibold   ` : `font-semibold`} to={'/about'}> About</NavLink>
+                                             <NavLink className={({ isActive }) => isActive ? ` textColor  font-semibold   ` : `font-semibold`} to={'/job'}> Job</NavLink>
                                              <NavLink className={({ isActive }) => isActive ? ` textColor  font-semibold   ` : `font-semibold`} to={'/services'}> Services</NavLink>
                                              <NavLink className={({ isActive }) => isActive ? ` textColor  font-semibold   ` : `font-semibold`} to={'/portfolio'}> My Portfolio</NavLink>
                                              <NavLink className={({ isActive }) => isActive ? ` textColor  font-semibold   ` : `font-semibold`} to={'/contact'}> contact</NavLink>

@@ -12,17 +12,19 @@ const Articles = () => {
 
 
      return (
-          <div className=" my-20 bg-[#ECEDF2] p-3">
+          <div className=" py-10 bg-[#ECEDF2] p-3">
 
                <Container>
                     <Title title={"Recent News Articles"} paragrap={"Fresh job related news content posted each day."}></Title>
               
 
 
+               <div className=" mt-32">
                <div className=" grid md:grid-cols-3 gap-4">
                     {
                          arctical.slice(0,3)?.map((item,index)=> <ArticalCard key={index} blog={item}></ArticalCard>)
                     }
+               </div>
                </div>
 
                   <div className=" text-center my-10">

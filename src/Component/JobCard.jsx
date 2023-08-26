@@ -6,7 +6,7 @@ import {GrMoney} from 'react-icons/gr'
 import {GoBookmark} from 'react-icons/go'
 import {Link} from 'react-router-dom'
 const JobCard = ({job}) => {
-     const {JobTitle,Name,JobType,Salary,Date,Industry,City,Experience,Location,Level,Country,Image}= job;
+     const {JobTitle,Name,_id,JobType,Salary,Date,Industry,City,Experience,Location,Level,Country,Image}= job;
      
      
      return (
@@ -50,7 +50,7 @@ const JobCard = ({job}) => {
            </div>
            <div className=' flex items-center gap-4'>
           
-            <Link className=' px-6 py-[4px] inline-block       rounded-lg  text-[#0058F0] text-xl font-normal'> Details </Link>
+            <Link to={`/job/${_id}`} className=' px-6 py-[4px] inline-block       rounded-lg  text-[#0058F0] text-xl font-normal'> Details </Link>
             <Link className=' px-6 py-[4px] inline-block       rounded-lg  bg-[#0058F0] text-white text-xl font-normal'> Apply new </Link>
            
 

@@ -42,6 +42,8 @@ const Modal = ({ setOpenModal, OpenModal }) => {
           })
 
      }
+
+     
      const handleLogin = (e) => {
           e.preventDefault();
           const from = e.target;

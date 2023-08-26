@@ -2,36 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
   color: #202124;
+  font-family: ui-sans-serif system-ui -apple-system BlinkMacSystemFont "Segoe UI"
+    Roboto "Helvetica Neue"
+    Arial "Noto Sans"
+    sans-serif "Apple Color Emoji"
+    "Segoe UI Emoji"
+    "Segoe UI Symbol"
+    "Noto Color Emoji";
 }
-.textColor{
+
+.textColor {
   color: #1967D2;
 }
-.BgColor{
+
+.BgColor {
   background-color: #1967D2;
 }
-.LogoStyle{
+
+.LogoStyle {
   color: #1967D2;
-  
+
 }
-.BgBanner{
-   
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.429) , rgba(36, 104, 230, 0.201));
+
+.BgBanner {
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.429), rgba(36, 104, 230, 0.201));
   width: 100%;
-   height: 100%;
+  height: 100%;
 }
-.Modal{
+
+.Modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.BgCoustomColor{
+.BgCoustomColor {
   background-color: #F0F5F7;
-   
+
 }
-.boxshadow{
+
+.boxshadow {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+

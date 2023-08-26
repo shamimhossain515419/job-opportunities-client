@@ -1,3 +1,4 @@
+import MarqueePage from "../../Component/MarqueePage";
 import Banner from "../Banner/Banner";
 import Complited from "../CompiletteProject/Complited";
 import Articles from "../artical/Artical";
@@ -13,8 +14,10 @@ const Home = () => {
                <PopularJob></PopularJob>
 
                <Job></Job>
-                 <hr />
+               <hr />
                <Motivation></Motivation>
+
+               <MarqueePage></MarqueePage>
                <Complited></Complited>
                <Articles></Articles>
           </div>

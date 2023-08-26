@@ -48,20 +48,20 @@ const DashboardMenu = ({back,setOpen}) => {
                          </NavLink >
                     </div>
                     <div className=" my-4">
-                         <NavLink to={'/job'} className={({ isActive }) => isActive ? " textColor  text-xl font-semibold flex justify-start items-center  my-2 gap-9" : "  text-xl font-semibold flex my-2 justify-start items-center  gap-9 "}>
+                         <NavLink to={'/dashboard/postJob'} className={({ isActive }) => isActive ? " textColor  text-xl font-semibold flex justify-start items-center  my-2 gap-9" : "  text-xl font-semibold flex my-2 justify-start items-center  gap-9 "}>
                               <AiOutlineSend></AiOutlineSend>
                               <h1> Post Job</h1>
                          </NavLink >
                     </div>
                     <div className=" my-4">
-                         <NavLink to={'/job'} className={({ isActive }) => isActive ? " textColor  text-xl font-semibold flex justify-start items-center  my-2 gap-9" : "  text-xl font-semibold flex my-2 justify-start items-center  gap-9 "}>
+                         <NavLink  to={'/job'}  className={({ isActive }) => isActive ? " textColor  text-xl font-semibold flex justify-start items-center  my-2 gap-9" : "  text-xl font-semibold flex my-2 justify-start items-center  gap-9 "}>
                               <AiOutlineMacCommand></AiOutlineMacCommand>
                               <h1> Post Management</h1>
                          </NavLink >
 
                     </div>
                     <div className=" my-4">
-                         <NavLink to={'/job'} className={({ isActive }) => isActive ? " textColor  text-xl font-semibold flex justify-start items-center  my-2 gap-9" : "  text-xl font-semibold flex my-2 justify-start items-center  gap-9 "}>
+                         <NavLink to={'/job'}  className={({ isActive }) => isActive ? " textColor  text-xl font-semibold flex justify-start items-center  my-2 gap-9" : "  text-xl font-semibold flex my-2 justify-start items-center  gap-9 "}>
                               <BsAlarm></BsAlarm>
                               <h1> Resume Alarts</h1>
                          </NavLink >

@@ -11,10 +11,9 @@ const Dashboard = () => {
           <div>
                <Navbar></Navbar>
 
-               {
-                     <div onClick={() => setOpen(true)} className={`${Open ? "hidden" : "block"}  md:hidden fixed left-0 top-16 z-40 bg-[#FFF] p-2 rounded-md  `}>
-                         <AiOutlineSend  className=" text-[#1967D2]" size={32}></AiOutlineSend>
-                    </div> 
+               {<div onClick={() => setOpen(true)} className={`${Open ? "hidden" : "block"}  md:hidden fixed left-0 top-16 z-40 bg-[#FFF] p-2 rounded-md  `}>
+                  <AiOutlineSend  className=" text-[#1967D2]" size={32}></AiOutlineSend>
+                </div> 
                }
 
 
